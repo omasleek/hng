@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <article data-testid="test-profile-card">
+        <figure>
+            <img data-testid="test-user-avatar" src="https://avatars.githubusercontent.com/u/82634046?v=4" alt="Profile picture of Chioma Ogbonna">
+            <figcaption>Chioma Ogbonna</figcaption>
+        </figure>
+        <div class="content">
+            <header>
+                <h2 data-testid="test-user-name">Chioma Ogbonna</h2>
+            </header>
+            <p data-testid="test-user-bio">A passionate Frontend developer who loves coding. Always eager to learn new technologies and collaborate with others.</p>
+            <p>Current time: <span data-testid="test-user-time"></span> milliseconds</p>
+            <nav data-testid="test-user-social-links">
+                <ul>
+                    <li><a data-testid="test-user-social-twitter" href="https://x.com/NeonSleek" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                    <li><a data-testid="test-user-social-github" href="https://github.com/omasleek" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/chioma-ogbonna-a51b75121/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+            </nav>
+            <div class="hobbies-dislikes-wrapper">
+                <section>
+                    <h3>Hobbies</h3>
+                    <ul data-testid="test-user-hobbies">
+                        <li>Reading</li>
+                        <li>Traveling</li>
+                        <li>Dancing</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>Dislikes</h3>
+                    <ul data-testid="test-user-dislikes">
+                        <li>Alcohol</li>
+                        <li>Loud noises</li>
+                        <li>Traffic</li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </article>
+    <script src="script.js"></script>
+</body>
+</html>

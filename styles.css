@@ -1,0 +1,205 @@
+/* Reset and base styles */
+* {
+   box-sizing: content-box;
+    margin: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #666;
+    padding: 20px;
+}
+
+article[data-testid="test-profile-card"] {
+   background-color: aliceblue;
+    border-radius: 10px;
+    box-shadow: #cfc5c5;
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* Tablet: keep vertical stack but adjust padding and avatar size */
+    article[data-testid="test-profile-card"] {
+        padding: 25px;
+    }
+
+    figure img[data-testid="test-user-avatar"] {
+        width: 130px;
+        height: 130px;
+    }
+
+    nav[data-testid="test-user-social-links"] ul {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop: horizontal layout */
+    article[data-testid="test-profile-card"] {
+        flex-direction: row;
+        align-items: flex-start;
+        max-width: none;
+        width: 100%;
+    }
+
+    figure {
+        flex-shrink: 0;
+        margin-right: 30px;
+    }
+
+    figure img[data-testid="test-user-avatar"] {
+        width: 180px;
+        height: 180px;
+    }
+
+    .content {
+        flex: 1;
+    }
+
+    nav[data-testid="test-user-social-links"] ul {
+        justify-content: flex-start;
+    }
+}
+
+/* Header */
+header h2[data-testid="test-user-name"] {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Avatar */
+figure img[data-testid="test-user-avatar"] {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Bio */
+p[data-testid="test-user-bio"] {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Time */
+p span[data-testid="test-user-time"] {
+    font-weight: bold;
+    color: #ff00bf;
+}
+
+/* Social links */
+nav[data-testid="test-user-social-links"] ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+nav[data-testid="test-user-social-links"] a {
+    color: #007bff;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav[data-testid="test-user-social-links"] a:hover,
+nav[data-testid="test-user-social-links"] a:focus {
+    background-color: #007bff;
+    color: #fff;
+    outline: 2px solid #0056b3;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
+
+.hobbies-dislikes-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (min-width: 1024px) {
+    .hobbies-dislikes-wrapper {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .hobbies-dislikes-wrapper section {
+        flex: 1;
+    }
+}
+
+section h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+ul[data-testid="test-user-hobbies"],
+ul[data-testid="test-user-dislikes"] {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+ul[data-testid="test-user-hobbies"] li,
+ul[data-testid="test-user-dislikes"] li {
+    margin-bottom: 5px;
+}
+
+/* Focus styles for accessibility */
+a:focus,
+button:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    /* Mobile: vertical stack */
+    article[data-testid="test-profile-card"] {
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    figure img[data-testid="test-user-avatar"] {
+        width: 120px;
+        height: 120px;
+    }
+
+    nav[data-testid="test-user-social-links"] ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    nav[data-testid="test-user-social-links"] a {
+        width: 100%;
+        text-align: center;
+    }
+}
