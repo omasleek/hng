@@ -7,41 +7,55 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <nav class="main-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Me</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </nav>
     <article data-testid="test-profile-card">
-        <figure>
-            <img data-testid="test-user-avatar" src="https://avatars.githubusercontent.com/u/82634046?v=4" alt="Profile picture of Chioma Ogbonna">
-            <figcaption>Chioma Ogbonna</figcaption>
-        </figure>
-        <div class="content">
+        <div class="left-section">
+            <figure>
+                <img data-testid="test-user-avatar" src="https://avatars.githubusercontent.com/u/82634046?v=4" alt="Profile picture of Chioma Ogbonna">
+                <figcaption>Profile Avatar</figcaption>
+            </figure>
+            <div class="role-info">
+                <h3>Software Developer</h3>
+                <p>Creating amazing UI friendly interfaces</p>
+            </div>
+            <button class="connect-btn">Connect with me</button>
+        </div>
+        <div class="right-section">
             <header>
                 <h2 data-testid="test-user-name">Chioma Ogbonna</h2>
             </header>
-            <p data-testid="test-user-bio">A passionate Frontend developer who loves coding. Always eager to learn new technologies and collaborate with others.</p>
-            <p>Current time: <span data-testid="test-user-time"></span> milliseconds</p>
+            <p data-testid="test-user-bio">.</p>
+            <p class="timestamp">Current time (ms): <span data-testid="test-user-time"></span></p>
             <nav data-testid="test-user-social-links">
                 <ul>
-                    <li><a data-testid="test-user-social-twitter" href="https://x.com/NeonSleek" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-                    <li><a data-testid="test-user-social-github" href="https://github.com/omasleek" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-                    <li><a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/chioma-ogbonna-a51b75121/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a data-testid="test-user-social-twitter" href="https://x.com/NeonSleek" target="_blank" rel="noopener noreferrer" aria-label="Twitter">𝕏</a></li>
+                    <li><a data-testid="test-user-social-github" href="https://github.com/omasleek" target="_blank" rel="noopener noreferrer" aria-label="GitHub">GitHub</a></li>
+                    <li><a data-testid="test-user-social-linkedin" href="https://www.linkedin.com/in/chioma-ogbonna-a51b75121/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">LinkedIn</a></li>
                 </ul>
             </nav>
-            <div class="hobbies-dislikes-wrapper">
-                <section>
-                    <h3>Hobbies</h3>
-                    <ul data-testid="test-user-hobbies">
-                        <li>Reading</li>
-                        <li>Traveling</li>
-                        <li>Dancing</li>
-                    </ul>
-                </section>
-                <section>
-                    <h3>Dislikes</h3>
-                    <ul data-testid="test-user-dislikes">
-                        <li>Alcohol</li>
-                        <li>Loud noises</li>
-                        <li>Traffic</li>
-                    </ul>
-                </section>
+        </div>
+        <div class="bottom-section">
+            <div class="glass-card hobbies-card">
+                <h3>Hobbies</h3>
+                <ul data-testid="test-user-hobbies">
+                    <li>Reading</li>
+                    <li>Traveling</li>
+                    <li>Dancing</li>
+                </ul>
+            </div>
+            <div class="glass-card dislikes-card">
+                <h3>Dislikes</h3>
+                <ul data-testid="test-user-dislikes">
+                    <li>Noise</li>
+                    <li>Poor Connectivity</li>
+                    <li>Poverty</li>
+                </ul>
             </div>
         </div>
     </article>
