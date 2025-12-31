@@ -1,4 +1,4 @@
-# Developer Portfolio 
+# Developer Portfolio
 
 A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dark theme with neon accents. Built with modern web technologies and fully responsive across all devices.
 
@@ -10,15 +10,23 @@ A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dar
 - **Interactive Elements**: Hover animations, glowing effects, and smooth transitions
 - **Responsive Design**: Optimized for mobile, tablet, and desktop screens
 
+## 📸 Preview
+
+![Glassmorphic Design 1](pics/glassmophic.PNG)
+![Glassmorphic Design 2](pics/glassmorphic2.PNG)
+![Glassmorphic Design 3](pics/glassmorphic3.PNG)
+
 ## 📱 Pages
 
 ### 🏠 Home (Profile Card)
+
 - **Left Section**: Circular avatar with glowing ring, role title, and connect button
 - **Right Section**: Name in gradient text, bio, timestamp, and social icons
 - **Bottom Section**: Glass cards for hobbies and dislikes
 - **Dynamic Time**: Real-time milliseconds display updating every second
 
 ### 📧 Contact Us
+
 - **Form Validation**: Client-side validation with real-time feedback
 - **Required Fields**: Name, email, subject, message (min 10 chars)
 - **Email Validation**: Proper email format checking
@@ -26,6 +34,7 @@ A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dar
 - **Accessibility**: ARIA labels and error associations
 
 ### 👤 About Me
+
 - **Reflective Sections**: Bio, goals, confidence areas, future note, extra thoughts
 - **Glass Cards**: Each section in its own glassmorphism container
 - **Interactive Lists**: Hover effects and smooth animations
@@ -59,11 +68,10 @@ A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dar
 └── README.md           # This file
 ```
 
-
-
 ## 🧪 Data Test IDs
 
 ### Profile Card (index.html)
+
 - `test-profile-card`: Root container
 - `test-user-name`: User name
 - `test-user-bio`: Biography paragraph
@@ -75,6 +83,7 @@ A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dar
 - `test-user-dislikes`: Dislikes list
 
 ### Contact Form (contact.html)
+
 - `test-contact-form`: Form container
 - `test-contact-name`: Name input
 - `test-contact-email`: Email input
@@ -85,6 +94,7 @@ A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dar
 - `test-contact-error-{field}`: Error messages for each field
 
 ### About Page (about.html)
+
 - `test-about-page`: Main container
 - `test-about-bio`: Bio section
 - `test-about-goals`: Goals section
@@ -116,6 +126,5 @@ A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dar
 - Built for modern browsers with CSS Grid and Flexbox support
 
 ---
-
 
 **Built by Omachilda**
