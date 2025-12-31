@@ -1,4 +1,4 @@
-# Developer Portfolio - Stage 0 & 1
+# Developer Portfolio 
 
 A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dark theme with neon accents. Built with modern web technologies and fully responsive across all devices.
 
@@ -117,4 +117,5 @@ A sleek, futuristic multi-page developer portfolio featuring a glassmorphism dar
 
 ---
 
-**Built with ❤️ for the HNG Internship Program**
+
+**Built by Omachilda**
